@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme {
+  --color-dark-bg: #0a0a1f;
+  --color-dark-card: #12122b;
+  --color-accent: #6366f1;
+  --color-accent-2: #a855f7;
+  --color-text: #e0e0ff;
+  --color-muted: #94a3b8;
+}
+.main-bg {
+  background: linear-gradient(135deg, #0f0f2e 0%, #1a1a4a 50%, #2a1b5f 100%);
+}
+.glass {
+  background: rgba(18, 18, 43, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+}
+.accent-gradient {
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+}
+.card-gradient {
+  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+}
+.navbar-gradient {
+  background: linear-gradient(to bottom, rgba(10, 10, 31, 0.95), rgba(10, 10, 31, 0.85));
+}
+.text-gradient {
+  background: linear-gradient(90deg, #c4c4ff, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glow-hover:hover {
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.4);
+}
+
+.progress-gradient {
+  background: linear-gradient(to right, #6366f1, #a855f7, #6366f1);
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+

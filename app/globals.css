@@ -23,10 +23,18 @@
   background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
 }
 .card-gradient {
-  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .navbar-gradient {
-  background: linear-gradient(to bottom, rgba(10, 10, 31, 0.95), rgba(10, 10, 31, 0.85));
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 31, 0.95),
+    rgba(10, 10, 31, 0.85)
+  );
 }
 .text-gradient {
   background: linear-gradient(90deg, #c4c4ff, #a5b4fc);
@@ -41,7 +49,15 @@
   background: linear-gradient(to right, #6366f1, #a855f7, #6366f1);
 }
 @keyframes pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
 }
-
+.card-hover:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 20px 40px -10px rgb(99 102 241 / 0.25);
+}

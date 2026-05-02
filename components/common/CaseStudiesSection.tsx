@@ -168,7 +168,7 @@ export default function CaseStudiesSection() {
         {/* Project Cards */}
         {projects.map((project, index) => (
           <motion.div
-            key={project.id}
+            key={index}
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
